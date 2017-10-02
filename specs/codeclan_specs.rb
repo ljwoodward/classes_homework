@@ -17,4 +17,9 @@ def test_get_cohort
   assert_equal(@student1.get_cohort, 16)
 end
 
+def test_set_name
+  @student1.set_name("Darren")
+  assert_equal(@student1.get_name, "Darren")
+end
+
 end
