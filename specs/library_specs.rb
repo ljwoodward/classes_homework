@@ -43,7 +43,13 @@ class TestLibrary < MiniTest::Test
           date: "01/12/16"
         }
         })
-      
-    end
+      end
+
+      def test_show_rental_details
+        assert_equal(@library1.show_rental_details("a_pale_view_of_hills"), {
+          student_name: "Rita",
+          date: "11/03/17"
+          })
+      end
 
   end
