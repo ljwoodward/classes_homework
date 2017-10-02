@@ -10,11 +10,11 @@ class TestSportsTeam < MiniTest::Test
   end
 
   def test_get_team_name
-    assert_equal(@team1.get_team_name, "The Codeclan Ping-Pong All-Stars")
+    assert_equal(@team1.team_name, "The Codeclan Ping-Pong All-Stars")
   end
 
   def test_get_team_members
-    assert_equal(@team1.get_team_members, ["Laurence", "Chris", "Aline", "Yoni", "Graeme", "Pete"])
+    assert_equal(@team1.players, ["Laurence", "Chris", "Aline", "Yoni", "Graeme", "Pete"])
   end
 
   def test_get_coach_name
