@@ -11,4 +11,13 @@ class SportsTeam
   def add_new_player(player)
     @players << player
   end
+
+  def search_players(name)
+      if @players.include?(name)
+        return true
+      else
+        return false
+      end
+
+  end
 end
