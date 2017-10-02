@@ -48,6 +48,14 @@ class Library
     end
   end
 
-
+def add_new_book(name)
+  @books << {
+    title: name,
+    rental_details: {
+      student_name: "",
+      date: ""
+    }
+  }
+end
 
 end
