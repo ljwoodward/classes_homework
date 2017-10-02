@@ -8,19 +8,7 @@ class SportsTeam
     @coach = coach
   end
 
-  # def get_team_name
-  #   return @team_name
-  # end
-  #
-  # def get_team_members
-  #   return @players
-  # end
-  #
-  # def get_coach_name
-  #   return @coach
-  # end
-  #
-  # def set_coach_name(name)
-  #   @coach = name
-  # end
+  def add_new_player(player)
+    @players << player
+  end
 end
