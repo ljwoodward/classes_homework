@@ -2,19 +2,19 @@ require "minitest/autorun"
 require "minitest/rg"
 require_relative "../codeclan.rb"
 
-class TestCodeClan < MiniTest::Test
-  @codeclan
+class TestStudent < MiniTest::Test
+  @student1
 
   def setup
-    @codeclan = CodeClan.new("Laurence", 16)
+    @student1 = Student.new("Laurence", 16)
   end
 
 def test_get_name
-  assert_equal(@codeclan.get_name, "Laurence")
+  assert_equal(@student1.get_name, "Laurence")
 end
 
 def test_get_cohort
-  assert_equal(@codeclan.get_cohort, 16)
+  assert_equal(@student1.get_cohort, 16)
 end
 
 end

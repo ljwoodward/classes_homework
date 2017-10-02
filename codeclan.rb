@@ -1,4 +1,4 @@
-class CodeClan
+class Student
 
   def initialize(input_name, input_cohort)
     @name = input_name
@@ -10,7 +10,7 @@ def get_name
 end
 
 def get_cohort
-  return @cohort  
+  return @cohort
 end
 
 end
