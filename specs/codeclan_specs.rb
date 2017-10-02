@@ -27,4 +27,10 @@ def test_set_cohort
   assert_equal(@student1.get_cohort, 15)
 end
 
+def test_talk
+  string = "I can talk!"
+  @student1.talk("I can talk!")
+  assert_equal("I can talk!", string)
+end
+
 end
