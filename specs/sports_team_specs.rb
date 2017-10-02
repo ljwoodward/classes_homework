@@ -39,4 +39,19 @@ class TestSportsTeam < MiniTest::Test
     assert_equal(@team1.search_players("Tony"), false)
   end
 
+  def test_win_lose_or_draw__win
+    @team1.win_lose_or_draw("win")
+    assert_equal(@team1.points, 3)
+  end
+
+  def test_win_lose_or_draw__lose
+    @team1.win_lose_or_draw("lose")
+    assert_equal(@team1.points, 0)
+  end
+
+  def test_win_lose_or_draw__draw
+    @team1.win_lose_or_draw("draw")
+    assert_equal(@team1.points, 1)
+  end
+
 end
