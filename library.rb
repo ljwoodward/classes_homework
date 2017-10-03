@@ -31,13 +31,16 @@ class Library
   end
 
   def book_details(name)
+
     for book in @books
+      puts book[:title]
       if book[:title] == name
         return book
-      else return nil
+
 
       end
     end
+     return nil
   end
 
   def show_rental_details(name)
@@ -56,6 +59,16 @@ def add_new_book(name)
       date: ""
     }
   }
+end
+
+def change_rental_details(title, student, return_date)
+  for books in @books
+    if books[:title] == title
+      books[:rental_details][:student_name] = student
+      books[:rental_details][:date] = return_date
+    end
+  end
+  return "Book not in library."
 end
 
 end
